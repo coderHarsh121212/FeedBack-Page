@@ -8,10 +8,10 @@ const Particularcomponent = ({ indiData }) => {
   const [toolkit, setToolkit] = useState(false);
   // console.log(indiData);
   return (
-    <div className="w-3/4 mx-auto border-2 h-auto bg-gray-200 p-2 rounded">
+    <div className="w-3/4 mx-auto border-2 h-auto bg-gray-200 p-2 rounded " >
       <div className="flex items-center gap-5 justify-between ">
         <div className="flex gap-5">
-          <img src={indiData.source.icon} className="h-5 w-5"></img>
+          <img src={indiData.source.icon} className="h-5 w-5" alt={indiData.source.name}></img>
           <p className="text-xs font-sans">
             <span className="font-bold">{indiData.reviewer_name} </span>wrote a
             review at <span className="font-bold">{indiData.source.name}</span>
